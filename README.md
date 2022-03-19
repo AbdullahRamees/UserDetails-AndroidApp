@@ -7,5 +7,5 @@
 
 
 	
-![HomePage](https://github.com/AbdullahRamees/UserDetails-AndroidApp/blob/main/Images/HomePage.jpeg)
+![HomePage](https://github.com/AbdullahRamees/UserDetails-AndroidApp/blob/main/Images/HomePage.jpeg =250x400)
 
