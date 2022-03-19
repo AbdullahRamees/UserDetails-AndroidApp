@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">UserDetails-AndroidApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Home</string>
+    <string name="second_fragment_label">Demo</string>
+    <string name="Demo">Demo</string>
+    <string name="StuName_And_ID">SE/2018/001  Abdullah M.R.M</string>
+    <string name="Date">19/03/2022</string>
+    <string name="back">Back</string>
+    <string name="Course_Title">SENG-22243</string>
+    <string name="Course_Name">Mobile Application Development</string>
+    <string name="Assignment_Number">Assignment 01</string>
+    <string name="SearchID">Search User by ID</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="search">Search</string>
+    <string name="please_insert_id_to_search">Please Insert ID To Search</string>
+    <string name="id_not_found">User ID Not Found</string>
+    <string name="user_details">User Details</string>
+    <string name="id">ID</string>
+    <string name="name">Name:</string>
+    <string name="username">UserName:</string>
+    <string name="email">Email:</string>
+    <string name="br" />
+    <string name="phone">phone</string>
+    <string name="website">website</string>
+    <string name="company">Company</string>
+    <string name="address">Address</string>
+    <string name="street">Street</string>
+    <string name="suite">Suite</string>
+    <string name="city">city</string>
+    <string name="zipcode">ZipCode</string>
+    <string name="clear">Clear</string>
+</resources>
