@@ -6,8 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.atarious.userdetails.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
+     var ID : Number? = null
 
+    fun SetID(id:Number){
+        ID = id
+    }
 private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,4 +20,6 @@ private lateinit var binding: ActivityMainBinding
         binding = ActivityMainBinding.inflate(layoutInflater)
          setContentView(binding.root)
     }
+
+
 }

@@ -1,8 +1,4 @@
-package com.atarious.userdetails.Model
-
-import org.json.JSONArray
-import org.json.JSONObject
-import java.util.*
+package com.atarious.userdetails.assignment01.model
 
 data class User (
     val id:Number,

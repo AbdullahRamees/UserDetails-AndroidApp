@@ -32,7 +32,7 @@ private var _binding: FragmentHomeBinding? = null
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_HomeFragment_to_demoFragment)
+            findNavController().navigate(R.id.action_HomeFragment_to_MainMenu)
         }
     }
 

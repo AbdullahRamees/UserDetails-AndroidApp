@@ -9,20 +9,66 @@
         android:id="@+id/HomeFragment"
         android:name="com.atarious.userdetails.HomeFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_Home" >
-
+        tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_HomeFragment_to_demoFragment"
-            app:destination="@id/demoFragment" />
+            android:id="@+id/action_HomeFragment_to_MainMenu"
+            app:destination="@id/MainMenu" />
     </fragment>
     <fragment
         android:id="@+id/demoFragment"
-        android:name="com.atarious.userdetails.DemoFragment"
+        android:name="com.atarious.userdetails.Practices.DemoFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_Demo" >
-
+        tools:layout="@layout/fragment_demo" >
         <action
-            android:id="@+id/action_DemoFragment_to_HomeFragment"
+            android:id="@+id/action_demoFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.atarious.userdetails.Practices.ListFragement"
+        android:label="@string/th_fragment_label"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_userFragment_to_HomeFragment"
             app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_demoFragment"
+            app:destination="@id/demoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MainMenu"
+        android:name="com.atarious.userdetails.mainMenu.MainMenu"
+        android:label="@string/Mainmenu_Label"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_MainMenu_to_demoFragment"
+            app:destination="@id/demoFragment" />
+        <action
+            android:id="@+id/action_MainMenu_to_Assignment01"
+            app:destination="@id/Assignment01" />
+        <action
+            android:id="@+id/action_MainMenu_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_MainMenu_to_Assignment02"
+            app:destination="@id/Assignment02" />
+    </fragment>
+    <fragment
+        android:id="@+id/Assignment01"
+        android:name="com.atarious.userdetails.assignment01.Assassinment01Fragment"
+        android:label="@string/Assignment01_Label"
+        tools:layout="@layout/fragment_assassinment01">
+        <action
+            android:id="@+id/action_Assignment01_to_MainMenu"
+            app:destination="@id/MainMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/Assignment02"
+        android:name="com.atarious.userdetails.assignment02.SharedPreferences"
+        android:label="@string/Assignment01_Label"
+        tools:layout="@layout/fragment_shared_proferences">
+        <action
+            android:id="@+id/action_Assignment02_to_MainMenu"
+            app:destination="@id/MainMenu" />
     </fragment>
 </navigation>

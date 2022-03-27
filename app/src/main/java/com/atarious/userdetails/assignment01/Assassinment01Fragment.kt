@@ -1,6 +1,5 @@
-package com.atarious.userdetails
+package com.atarious.userdetails.assignment01
 
-import android.location.Address
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -9,35 +8,35 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
-import com.atarious.userdetails.Model.User
-import com.atarious.userdetails.api.UserApiServices
-import com.atarious.userdetails.databinding.FragmentDemoBinding
-import com.google.gson.Gson
+import com.atarious.userdetails.R
+import com.atarious.userdetails.assignment01.api.UserApiServices
+import com.atarious.userdetails.assignment01.model.User
+import com.atarious.userdetails.databinding.FragmentAssassinment01Binding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 /**
- * A simple [Fragment] subclass as the second destination in the navigation.
+ * A simple [Fragment] subclass.
+ * Use the [Assassinment01Fragment.newInstance] factory method to
+ * create an instance of this fragment.
  */
-class DemoFragment : Fragment() {
-
-
-    private var _binding: FragmentDemoBinding? = null
+class Assassinment01Fragment : Fragment() {
+    private var _binding: FragmentAssassinment01Binding? = null
     private var UserID :Number = 0
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
     private val userApiServices = UserApiServices.create()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        activity?.findViewById<TextView>(R.id.custom_title)?.setText("Demo")
-        _binding = FragmentDemoBinding.inflate(inflater, container, false)
-      return binding.root
+        activity?.findViewById<TextView>(R.id.custom_title)?.setText("Assignment 01")
+        _binding = FragmentAssassinment01Binding.inflate(inflater, container, false)
+        return binding.root
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -47,7 +46,7 @@ class DemoFragment : Fragment() {
         binding.layouts.setVisibility(View.INVISIBLE)
 
         binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_DemoFragment_to_HomeFragment)
+            findNavController().navigate(R.id.action_Assignment01_to_MainMenu)
         }
         binding.Search.setOnClickListener{
             if(binding.TextFieldForID.getText().toString().trim().length <= 0){
@@ -68,7 +67,7 @@ class DemoFragment : Fragment() {
                 }else{
 
                     val user = userApiServices.GetUser(UserID.toString())
-                    user.enqueue(object : Callback<User>{
+                    user.enqueue(object : Callback<User> {
                         override fun onResponse(call: Call<User>, response: Response<User>) {
                             val body = response.body()
                             body?.let {
@@ -87,7 +86,7 @@ class DemoFragment : Fragment() {
                         }
 
                         override fun onFailure(call: Call<User>, t: Throwable) {
-                           Log.i("DemoFragment ",t.message!!)
+                            Log.i("DemoFragment ",t.message!!)
                         }
 
                     })
@@ -108,10 +107,9 @@ class DemoFragment : Fragment() {
             binding.TextFieldForID.text = null
         }
     }
-override fun onDestroyView() {
+    override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 }
-
 

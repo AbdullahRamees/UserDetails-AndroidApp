@@ -4,13 +4,16 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Home</string>
     <string name="second_fragment_label">Demo</string>
+    <string name="th_fragment_label">User List</string>
+    <string name="Mainmenu_Label">Main Menu</string>
+    <string name="Assignment01_Label">Assignment 01</string>
     <string name="Demo">Demo</string>
     <string name="StuName_And_ID">SE/2018/001  Abdullah M.R.M</string>
     <string name="Date">19/03/2022</string>
     <string name="back">Back</string>
     <string name="Course_Title">SENG-22243</string>
     <string name="Course_Name">Mobile Application Development</string>
-    <string name="Assignment_Number">Assignment 01</string>
+    <string name="Assignments">Assignments &amp; Self Practices </string>
     <string name="SearchID">Search User by ID</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
@@ -33,4 +36,14 @@
     <string name="city">city</string>
     <string name="zipcode">ZipCode</string>
     <string name="clear">Clear</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="assignment_01">Assignment 01</string>
+    <string name="shared_proferance_demo">Shared Provenances Demo</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="i_have_whatsapp_in_this_number">I have Whatsapp in this Number</string>
+    <string name="save">Save</string>
+    <string name="return_saved_data">Return Saved Data</string>
+    <string name="saved_data">Saved Data</string>
+    <string name="no_data_saved">No data Saved</string>
 </resources>

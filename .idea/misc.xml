@@ -3,15 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/drawable/round_button.xml" value="0.1045" />
         <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/card_view_design.xml" value="0.5" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/card_view_design_MainMenu.xml" value="0.15989583333333332" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/card_view_design_mainmenu.xml" value="0.1" />
         <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_Home.xml" value="0.15416666666666667" />
-        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_demo.xml" value="0.1" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_assassinment01.xml" value="0.25" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_demo.xml" value="0.2468553459119497" />
         <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_first.xml" value="0.22" />
         <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_item_list.xml" value="0.21041666666666667" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_list.xml" value="0.25" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_main_menu.xml" value="0.25" />
         <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_second.xml" value="0.22" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/fragment_shared_proferences.xml" value="0.5" />
         <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/layout/toolbar_layout.xml" value="0.1" />
         <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/menu/menu_main.xml" value="0.15416666666666667" />
+        <entry key="..\:/Projects/UserDetails-AndroidApp/app/src/main/res/mipmap-anydpi-v26/ic_titleimage.xml" value="0.1025" />
       </map>
     </option>
   </component>
