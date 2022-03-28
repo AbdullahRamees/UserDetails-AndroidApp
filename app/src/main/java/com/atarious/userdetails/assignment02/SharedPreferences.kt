@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.atarious.userdetails.R
 import com.atarious.userdetails.databinding.FragmentSharedProferencesBinding
 
@@ -89,6 +90,9 @@ class SharedPreferences : Fragment() {
             editor.commit()
             binding.DataLayout.visibility = View.INVISIBLE
             binding.NOdataLayout2.visibility = View.INVISIBLE
+        }
+        binding.buttonBAck.setOnClickListener {
+            findNavController().navigate(R.id.action_Assignment02_to_MainMenu)
         }
     }
 
